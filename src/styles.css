@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.App {
+  font-family: Roboto;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background: #745e5e;
+}
+
+.left-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-left-container {
+  padding: 40px;
+  text-align: left;
+  color: white;
+}
+
+.inner-left-container > input {
+  margin: 15px 0;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+  margin-bottom: 25px;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+.inner-left-container > button {
+  border: none;
+  padding: 5px 15px;
+  color: #745e5e;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.button-group > button {
+  width: 30%;
+  padding: 5px 0;
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.right-image {
+  width: 50%;
+  height: 100%;
+}
+
+.right-image > img {
+  height: 100%;
+}
+@media only screen and (max-width: 400px) {
+  .right-image {
+    display: none;
+  }
+  .left-container {
+    width: 100%;
+  }
+}
